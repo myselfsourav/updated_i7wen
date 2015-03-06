@@ -283,6 +283,7 @@
 	top: 4px;
     }
 */
+#navigation ul{ position:relative; z-index:100;}
 nav #top-bar { display: block; position: relative; }
 .image-logo1 { display: inline-block; position: relative; padding: 7px 0px 0px 7px; }
 .image-logo1 a { border: 0px; padding: 0px; }
