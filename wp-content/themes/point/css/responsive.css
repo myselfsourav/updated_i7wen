@@ -41,6 +41,7 @@
     #navigation ul {
 	float: none;
 	background: #283744;
+position:relative;z-index:100; /* RLEE mobile menu not clickable */
     }
     #navigation .sub-menu:after, #navigation .sub-menu:before { border-bottom-color: rgba(0, 0, 0, 0) }
     #navigation ul ul {
