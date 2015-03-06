@@ -1756,3 +1756,31 @@ input#author:focus, input#email:focus, input#url:focus, #contactForm textarea:fo
     height: 100%;
 }
 /*.fb-like span{overflow:visible !important; width:450px !important; margin-right:-375px;} //RLEE use if want force comment box to appear */
+
+.share-inner-wrapper {
+  background: none repeat scroll 0 0 #54699b;
+  border-radius: 4px;
+  padding: 7px 0 0;
+  cursor:pointer;
+}
+
+
+.share-inner-wrapper:hover {
+  background: none repeat scroll 0 0 #8796B9;
+}
+
+.post-bot-fb-f {
+  display: inline-block;
+  width: 25px;
+}
+.post-bot-fb-text {
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  padding: 14px 0 0 15px;
+  text-shadow: 3px 2px 0 #303030;
+  vertical-align: top;
+}
+.share-inner-wrapper {
+    text-align: center;
+}
