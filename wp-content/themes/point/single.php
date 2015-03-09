@@ -1,4 +1,15 @@
 <?php get_header(); ?>
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+		jQuery(".hoverable").one("hover",function(){
+        	jQuery.fancybox.open("#inline1");
+        });
+        
+    });
+</script>
+
+
 <?php $mts_options = get_option('point'); ?>
 <div id="page" class="single">
 	<div class="content">
@@ -73,7 +84,16 @@ echo '<div style="margin-bottom:8px;overflow:hidden;"><div style="display:inline
                               fjs.parentNode.insertBefore(js, fjs);
                             }(document, 'script', 'facebook-jssdk'));</script>
 							<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                            <!--Facebook Like End-->
+                           <!--Facebook Like End-->
+                           <!--Facebook Like Popup-->
+                           <div id="inline1" style="display: none; text-align:center">
+                           <h3>喜歡這篇嗎？快分享！</h3>
+								<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+							</div>
+                           <!--Facebook Like POPUP End-->
+                           
+                           
+                           
 						<!-- End Content -->
 						<?php if($mts_options['mts_related_posts'] == '1') { ?>	
 							<!-- Start Related Posts -->
