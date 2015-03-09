@@ -11,7 +11,16 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<?php mts_meta(); ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+    
+
 	<?php wp_head(); ?>
+   <!-- <script type="text/javascript" src="<?php //bloginfo(template_url); ?>/js/jquery.fancybox.js"></script>-->
+   
+   <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="<?php bloginfo(template_url); ?>/js/jquery.fancybox.pack.js"></script>
+   
+   
 </head>
 <body id ="blog" <?php body_class('main'); ?>>
 <?php if (fb_allowed()) { //RLEE
@@ -26,6 +35,7 @@ echo '<!-- Facebook START -->
 }(document, "script", "facebook-jssdk"));</script>
 <!-- Facebook END -->';
 } ?>
+
 	<div class="main-container">
 		<?php if(isset($mts_options['mts_trending_articles'])) { if($mts_options['mts_trending_articles'] == '1' && $mts_options['mts_trending_articles'] != '') { ?>
 			<div class="trending-articles">
