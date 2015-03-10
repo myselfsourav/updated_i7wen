@@ -1,15 +1,4 @@
 <?php get_header(); ?>
-
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-		jQuery(".hoverable").one("hover",function(){
-        	jQuery.fancybox.open("#inline1");
-        });
-        
-    });
-</script>
-
-
 <?php $mts_options = get_option('point'); ?>
 <div id="page" class="single">
 	<div class="content">
@@ -57,25 +46,15 @@ echo '<div style="margin-bottom:8px;overflow:hidden;"><div style="display:inline
 						</div>
                         
                         <!--Facebook Share-->
-                        
-                     
-                        
-                       
                         <a class="hoverable share-fb post-bot-fb" id="vdsShare scroll_pop_trigger-145753" rel="nofollow" onClick="window.open('http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)">
                         <div class="share-wrapper">
                             <div class="share-inner-wrapper">
-                            
-                            
                             <img width="70" height="120" class="post-bot-fb-f" src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook.png"><span class="post-bot-fb-text">喜歡這篇嗎？快分享！</span>
-                            
-                            
                             </div>
                        </div>
                        </a>
-                
-                        
-                        <!--Facebook Like-->
-                         <div id="fb-root"></div>
+                		<!--Facebook Like-->
+                        <div id="fb-root"></div>
 							<script>(function(d, s, id) {
                               var js, fjs = d.getElementsByTagName(s)[0];
                               if (d.getElementById(id)) return;
@@ -91,7 +70,6 @@ echo '<div style="margin-bottom:8px;overflow:hidden;"><div style="display:inline
 								<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 							</div>
                            <!--Facebook Like POPUP End-->
-                           
                            
                            
 						<!-- End Content -->
@@ -144,7 +122,6 @@ echo '<div style="margin-bottom:8px;overflow:hidden;"><div style="display:inline
 						<?php }?>  
 					</div>
 				</div>
-               
 				<?php comments_template( '', true ); ?>
 			<?php endwhile; ?>
 		</article>
