@@ -12,6 +12,8 @@
 	<?php mts_meta(); ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_head(); ?>
+    <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="<?php bloginfo(template_url); ?>/js/jquery.fancybox.pack.js"></script>
 </head>
 <body id ="blog" <?php body_class('main'); ?>>
 <?php if (fb_allowed()) { //RLEE
