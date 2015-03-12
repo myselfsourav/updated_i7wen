@@ -18,10 +18,3 @@ wp-content/*
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
 !wp-content/themes/point/
-
-wp-content/themes/point/yao-page.php
-wp-content/themes/point/one.php
-wp-content/themes/point/page2.php
-wp-content/themes/point/rlee_tag.php
-wp-content/themes/point/functions/orig_rlee_video.php
-wp-content/themes/point/functions/rlee_video.php
