@@ -30,11 +30,11 @@
 	<!--Facebook Share-->
 	<a class="hoverable share-fb post-bot-fb" id="vdsShare scroll_pop_trigger-145753" rel="nofollow" onClick="window.open('http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>', 'sharer', 'toolbar=0,status=0,width=548,height=325');" target="_parent" href="javascript: void(0)">
 	<div class="share-wrapper">
-	    <div class="share-inner-wrapper">
-	    <img width="70" height="120" class="post-bot-fb-f" src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook.png"><span class="post-bot-fb-text">喜歡這篇嗎？快分享！</span>
-	    </div>
-       </div>
-       </a>
+		<div class="share-inner-wrapper">
+		<img width="70" height="120" class="post-bot-fb-f" src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook.png"><span class="post-bot-fb-text">喜歡這篇嗎？快分享！</span>
+		</div>
+	</div>
+	</a>
 	<!--Facebook Like-->
 	<center><span style="margin-top:2em;">請幫我們按個贊吧！</span><div class="fb-like" data-href="https://www.facebook.com/pages/&#x7231;&#x5947;&#x95fb;-i7wencom/399615256870590" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" style="margin-top:0.5em;"></div></center>
 	<!--Facebook Like End-->
@@ -62,7 +62,7 @@
 								$pexcerpt=1; $j = 0; $counter = 0; while( $my_query->have_posts() ) { ++$counter; if($counter == 4) { $postclass = 'last'; $counter = 0; } else { $postclass = ''; } $my_query->the_post();?>
 								<li class="<?php echo $postclass; ?> rpexcerpt<?php echo $pexcerpt ?> <?php echo (++$j % 2 == 0) ? 'last' : ''; ?>">
 <?php if($postclass == 'last'): //RLEE ?>
-<a rel="nofollow" class="relatedthumb" href="http://pkxuan.com?ref=i7wen" rel="bookmark" title="想在這裡看到你的内容?">
+<a rel="nofollow" class="relatedthumb" href="http://vossbox.com/blog.html?ref=i7wen" rel="bookmark" title="想在這裡看到你的内容?">
 <span class="rthumb">
 <img width="140" height="100" src="http://i7wen.com/wp/wp-content/uploads/2015/02/pkxuan.jpg" class="attachment-smallthumb wp-post-image" alt="" title="" /></span>
 <span>想在這裡看到你的内容?</span>
@@ -81,7 +81,7 @@
 										</span>
 									</a>
 									<div class="meta">
-										<!-- <a href="<?php comments_link(); ?>" rel="nofollow"><?php comments_number();?></a> | <span class="thetime"><?php the_time('Y/n/j'); ?></span>--> 
+										<!-- <a href="<?php comments_link(); ?>" rel="nofollow"><?php comments_number();?></a> | <span class="thetime"><?php the_time('Y-n-j'); ?></span>--> 
 									</div> <!--end .entry-meta-->
 <?php endif; //RLEE ?>
 								</li>
