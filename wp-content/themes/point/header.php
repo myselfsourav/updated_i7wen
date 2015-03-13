@@ -12,8 +12,10 @@
 	<?php mts_meta(); ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_head(); ?>
+<?php if (fb_allowed()) { ?>
     <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/jquery.fancybox.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="<?php bloginfo(template_url); ?>/js/jquery.fancybox.pack.js"></script>
+<?php } //RLEE ?>
 </head>
 <body id ="blog" <?php body_class('main'); ?>>
 <?php if (fb_allowed()) { //RLEE
@@ -23,7 +25,7 @@ echo '<!-- Facebook START -->
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=373979302783232&version=v2.0";
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=373979302783232&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, "script", "facebook-jssdk"));</script>
 <!-- Facebook END -->';

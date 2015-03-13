@@ -1762,13 +1762,13 @@ input#author:focus, input#email:focus, input#url:focus, #contactForm textarea:fo
   border-radius: 4px;
   padding: 7px 0 0;
   cursor:pointer;
+  text-align: center;
+  display:inline-block;
+  width:100%;
 }
-
-
 .share-inner-wrapper:hover {
   background: none repeat scroll 0 0 #8796B9;
 }
-
 .post-bot-fb-f {
   display: inline-block;
   width: 25px;
@@ -1780,7 +1780,4 @@ input#author:focus, input#email:focus, input#url:focus, #contactForm textarea:fo
   padding: 14px 0 0 15px;
   text-shadow: 3px 2px 0 #303030;
   vertical-align: top;
-}
-.share-inner-wrapper {
-    text-align: center;
 }
