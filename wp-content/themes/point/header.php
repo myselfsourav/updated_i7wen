@@ -81,7 +81,7 @@ echo '<!-- Facebook START -->
 <div id="top-bar">
 <div class="pull-bar">
 					<a href="#" id="pull"><div class="menu-text"><?php _e('Menu','mythemeshop'); ?></div></a> </div>
-<div class="image-logo1"><a href="http://i7wen.com"><img width="80" height="30" src="http://i7wen.com/wp/wp-content/themes/point/css/images/logo3_x60.png"></a>
+<div class="image-logo1"><a href="<?php echo home_url(); ?>"><img width="80" height="30" src="http://i7wen.com/wp/wp-content/themes/point/css/images/logo3_x60.png"></a>
 </div>
 </div>
 					</nav>
