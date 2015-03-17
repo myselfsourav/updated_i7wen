@@ -1776,7 +1776,7 @@ input#author:focus, input#email:focus, input#url:focus, #contactForm textarea:fo
 .post-bot-fb-text {
   color: #fff;
   display: inline-block;
-  font-size: 30px;
+  font-size: 1.7em;
   padding: 14px 0 0 15px;
   text-shadow: 3px 2px 0 #303030;
   vertical-align: top;
