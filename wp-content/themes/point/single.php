@@ -75,12 +75,14 @@
 	<!--Facebook Like-->
 	<center><span style="margin-top:2em;">請幫我們按個贊吧！</span><div class="fb-like" data-href="https://www.facebook.com/pages/&#x7231;&#x5947;&#x95fb;-i7wencom/399615256870590" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" style="margin-top:0.5em;"></div></center>
 	<!--Facebook Like End-->
+
      <!--Facebook Like Popup-->
                            <div id="inline1" style="display: none; text-align:center">
                            <h3>喜歡這篇嗎？快分享！</h3>
 								<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 							</div>
                            <!--Facebook Like POPUP End-->
+
 <?php } //RLEE Facebook ?>
 							<?php rlee_after_pagination(); //RLEE ?>
 							<?php if ($mts_options['mts_postend_adcode'] != '') { ?>
